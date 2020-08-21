@@ -1,7 +1,7 @@
 package say_test
 
 import (
-	"github.com/bruteforce1414/study-go/testChannels/say"
+	"github.com/bruteforce1414/simple-web-server-with-test/say"
 	"net/http"
 	"net/http/httptest"
 	"testing"
