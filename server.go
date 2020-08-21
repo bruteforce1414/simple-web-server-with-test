@@ -19,21 +19,6 @@ func main() {
 		AllowMethods: []string{http.MethodGet, http.MethodPut, http.MethodPost, http.MethodDelete},
 	}))
 
-
-	var elementPath string;
-
-	elementPath="/saygoodbye"
-	http.HandleFunc(elementPath, say.Say)
-
-	elementPath="/sayhello"
-	http.HandleFunc(elementPath, say.Say)
-
-	elementPath="/saynothing"
-	http.HandleFunc(elementPath, say.Say)
-
-	elementPath="/sayeverything"
-	http.HandleFunc(elementPath, say.Say)
-
 	fmt.Println("Server is listening...")
 
 	e.GET("/dashboard", say.TasksGet)
